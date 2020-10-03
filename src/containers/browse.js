@@ -27,7 +27,7 @@ export function BrowseContainer({ slides }) {
     setSlideRows(slides[category]);
   }, [slides, category]);
 
-  useEffect(() => {
+  useEffect(() => { 
     const fuse = new Fuse(slideRows, {
       keys: ["data.description", "data.title", "data.genre"],
     });
@@ -114,11 +114,15 @@ export function BrowseContainer({ slides }) {
               ))}
             </Card.Entities>
             <Card.Feature category={category}>
-           
+              <Player>
+                <Player.Button />
+                <Player.Video src="/videos/bunny.mp4" />
+              </Player>
             </Card.Feature>
           </Card>
         ))}
       </Card.Group>
+      
       <FooterContainer />
     </>
   ) : (
