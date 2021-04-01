@@ -6,7 +6,7 @@ import { seedDatabase } from '../seed.js';
 // we need a config here
 
 const config = {
-  apiKey: "AIzaSyADoJ8GX1G5LdGrO78NDCmJQDCxnK2WSPU",
+  apiKey: "",
   authDomain: "netflix-clone-5b63c.firebaseapp.com",
   databaseURL: "https://netflix-clone-5b63c.firebaseio.com",
   projectId: "netflix-clone-5b63c",
